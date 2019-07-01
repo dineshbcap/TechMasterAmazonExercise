@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Tech Master Excersie]">
+  <parameter name="password" value="Dinesh@123"/>
+  <parameter name="port" value="4728"/>
+  <parameter name="browser name" value="Android"/>
+  <parameter name="host" value="127.0.0.1"/>
+  <parameter name="device name" value="80cde1cc"/>
+  <parameter name="productDetailForSearch" value="Samsung galaxy a9 pro"/>
+  <parameter name="platform" value="Android"/>
+  <parameter name="username" value="9894192967"/>
+  <test name="Login With Valid And Invalid Credentials Test(failed)">
+    <classes>
+      <class name="com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1">
+        <methods>
+          <include name="setUp"/>
+          <include name="testInvalidLoginValidation"/>
+          <include name="testProductCheckout" invocation-numbers="0"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1 -->
+      <class name="com.tech_master.excer.test.AmazonProductCheckoutExcer2">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tech_master.excer.test.AmazonProductCheckoutExcer2 -->
+    </classes>
+  </test> <!-- Login With Valid And Invalid Credentials Test(failed) -->
+  <test name="Product Checkout Test(failed)">
+    <parameter name="productDetailForSearch" value="Samsung galaxy a9 pro"/>
+    <classes>
+      <class name="com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1 -->
+      <class name="com.tech_master.excer.test.AmazonProductCheckoutExcer2">
+        <methods>
+          <include name="teardown"/>
+          <include name="testProductCheckout" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tech_master.excer.test.AmazonProductCheckoutExcer2 -->
+    </classes>
+  </test> <!-- Product Checkout Test(failed) -->
+</suite> <!-- Failed suite [Tech Master Excersie] -->

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Tech_Master_Excersie">
+              <span class="suite-name border-failed">Tech Master Excersie</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Tech_Master_Excersie">
+                    <span>D:\Workspace\Workout\Java\TechMaster_Excer\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Tech_Master_Excersie">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Tech_Master_Excersie">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Tech_Master_Excersie">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Tech_Master_Excersie">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Tech_Master_Excersie">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Tech_Master_Excersie">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Tech_Master_Excersie" class="hide-methods failed suite-Tech_Master_Excersie"> (hide)</a> <!-- hide-methods failed suite-Tech_Master_Excersie -->
+                      <a href="#" panel-name="suite-Tech_Master_Excersie" class="show-methods failed suite-Tech_Master_Excersie"> (show)</a> <!-- show-methods failed suite-Tech_Master_Excersie -->
+                    </span>
+                    <div class="method-list-content failed suite-Tech_Master_Excersie">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tech_Master_Excersie" title="com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1" hash-for-method="testInvalidLoginValidation">testInvalidLoginValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tech_Master_Excersie" title="com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1" hash-for-method="testProductCheckout(9894192967, Dinesh@123)">testProductCheckout(9894192967, Dinesh@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tech_Master_Excersie" title="com.tech_master.excer.test.AmazonProductCheckoutExcer2" hash-for-method="testProductCheckout(9894192967, Dinesh@123, Samsung galaxy a9 pro)">testProductCheckout(9894192967, Dinesh@123, Samsung galaxy a9 pro)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Tech_Master_Excersie -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Tech_Master_Excersie" class="hide-methods passed suite-Tech_Master_Excersie"> (hide)</a> <!-- hide-methods passed suite-Tech_Master_Excersie -->
+                      <a href="#" panel-name="suite-Tech_Master_Excersie" class="show-methods passed suite-Tech_Master_Excersie"> (show)</a> <!-- show-methods passed suite-Tech_Master_Excersie -->
+                    </span>
+                    <div class="method-list-content passed suite-Tech_Master_Excersie">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tech_Master_Excersie" title="com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1" hash-for-method="testBlankLoginValidation">testBlankLoginValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Tech_Master_Excersie -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Tech_Master_Excersie" class="panel Tech_Master_Excersie">
+          <div class="suite-Tech_Master_Excersie-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLoginValidation">
+                  </a> <!-- testInvalidLoginValidation -->
+                  <span class="method-name">testInvalidLoginValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.33 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;dell-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=in.amazon.mShop.android.shopping, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=80cde1cc, platform=LINUX, deviceUDID=80cde1cc, appActivity=com.amazon.mShop.home.HomeActivity, desired={appPackage=in.amazon.mShop.android.shopping, appActivity=com.amazon.mShop.home.HomeActivity, BROWSER_NAME=Android, platformName=Android, deviceName=80cde1cc}, BROWSER_NAME=Android, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=SM-A910F, platformName=Android, deviceManufacturer=samsung}]
+Session ID: c9f8ef2a-c38d-4c06-bb6f-d7da449d9008
+*** Element info: {Using=id, value=in.amazon.mShop.android.shopping:id/sign_in_button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:43)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:59)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.tech_master.excer.page.LoginPage.alreadyHaveAccount(LoginPage.java:48)
+	at com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1.testInvalidLoginValidation(AmazonLoginValidInvalidTestExcer1.java:85)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductCheckout(9894192967, Dinesh@123)">
+                  </a> <!-- testProductCheckout(9894192967, Dinesh@123) -->
+                  <span class="method-name">testProductCheckout</span>
+                  <span class="parameters">(9894192967, Dinesh@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;dell-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=in.amazon.mShop.android.shopping, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=80cde1cc, platform=LINUX, deviceUDID=80cde1cc, appActivity=com.amazon.mShop.home.HomeActivity, desired={appPackage=in.amazon.mShop.android.shopping, appActivity=com.amazon.mShop.home.HomeActivity, BROWSER_NAME=Android, platformName=Android, deviceName=80cde1cc}, BROWSER_NAME=Android, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=SM-A910F, platformName=Android, deviceManufacturer=samsung}]
+Session ID: c9f8ef2a-c38d-4c06-bb6f-d7da449d9008
+*** Element info: {Using=id, value=in.amazon.mShop.android.shopping:id/sign_in_button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:43)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:59)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.tech_master.excer.page.LoginPage.alreadyHaveAccount(LoginPage.java:48)
+	at com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1.testProductCheckout(AmazonLoginValidInvalidTestExcer1.java:50)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tech_Master_Excersie-class-failed -->
+          <div class="suite-Tech_Master_Excersie-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tech_master.excer.test.AmazonProductCheckoutExcer2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductCheckout(9894192967, Dinesh@123, Samsung galaxy a9 pro)">
+                  </a> <!-- testProductCheckout(9894192967, Dinesh@123, Samsung galaxy a9 pro) -->
+                  <span class="method-name">testProductCheckout</span>
+                  <span class="parameters">(9894192967, Dinesh@123, Samsung galaxy a9 pro)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;dell-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=in.amazon.mShop.android.shopping, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=80cde1cc, platform=LINUX, deviceUDID=80cde1cc, appActivity=com.amazon.mShop.home.HomeActivity, desired={appPackage=in.amazon.mShop.android.shopping, appActivity=com.amazon.mShop.home.HomeActivity, BROWSER_NAME=Android, platformName=Android, deviceName=80cde1cc}, BROWSER_NAME=Android, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=SM-A910F, platformName=Android, deviceManufacturer=samsung}]
+Session ID: 12437363-8619-4ee5-a67e-38e94257586f
+*** Element info: {Using=xpath, value=//*[starts-with(@text,&apos;Cart&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:43)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:129)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.tech_master.excer.page.ProductDetailsPage.goToCart(ProductDetailsPage.java:34)
+	at com.tech_master.excer.test.AmazonProductCheckoutExcer2.testProductCheckout(AmazonProductCheckoutExcer2.java:91)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tech_Master_Excersie-class-failed -->
+          <div class="suite-Tech_Master_Excersie-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlankLoginValidation">
+                  </a> <!-- testBlankLoginValidation -->
+                  <span class="method-name">testBlankLoginValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tech_Master_Excersie-class-passed -->
+        </div> <!-- panel Tech_Master_Excersie -->
+        <div panel-name="test-xml-Tech_Master_Excersie" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Workspace\Workout\Java\TechMaster_Excer\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Tech Master Excersie&quot;&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;Dinesh@123&quot;/&gt;
+  &lt;parameter name=&quot;port&quot; value=&quot;4728&quot;/&gt;
+  &lt;parameter name=&quot;browser name&quot; value=&quot;Android&quot;/&gt;
+  &lt;parameter name=&quot;host&quot; value=&quot;127.0.0.1&quot;/&gt;
+  &lt;parameter name=&quot;device name&quot; value=&quot;80cde1cc&quot;/&gt;
+  &lt;parameter name=&quot;platform&quot; value=&quot;Android&quot;/&gt;
+  &lt;parameter name=&quot;username&quot; value=&quot;9894192967&quot;/&gt;
+  &lt;test name=&quot;Login With Valid And Invalid Credentials Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login With Valid And Invalid Credentials Test --&gt;
+  &lt;test name=&quot;Product Checkout Test&quot;&gt;
+    &lt;parameter name=&quot;productDetailForSearch&quot; value=&quot;Samsung galaxy a9 pro&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tech_master.excer.test.AmazonProductCheckoutExcer2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Product Checkout Test --&gt;
+&lt;/suite&gt; &lt;!-- Tech Master Excersie --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Tech_Master_Excersie" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Tech Master Excersie</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login With Valid And Invalid Credentials Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Product Checkout Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Tech_Master_Excersie" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Tech Master Excersie</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Tech_Master_Excersie" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Tech Master Excersie</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Tech_Master_Excersie');
+function tableData_Tech_Master_Excersie() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testProductCheckout')
+data.setCell(0, 2, 'com.tech_master.excer.test.AmazonProductCheckoutExcer2')
+data.setCell(0, 3, 133051);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testProductCheckout')
+data.setCell(1, 2, 'com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1')
+data.setCell(1, 3, 30427);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testInvalidLoginValidation')
+data.setCell(2, 2, 'com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1')
+data.setCell(2, 3, 30360);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testBlankLoginValidation')
+data.setCell(3, 2, 'com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1')
+data.setCell(3, 3, 21158);
+window.suiteTableData['Tech_Master_Excersie']= { tableData: data, tableDiv: 'times-div-Tech_Master_Excersie'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Tech_Master_Excersie">
+              </div> <!-- times-div-Tech_Master_Excersie -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Tech_Master_Excersie" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Tech Master Excersie</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Tech_Master_Excersie" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Tech_Master_Excersie" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Android, 80cde1cc, Android, 127.0.0.1, 4728)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testBlankLoginValidation</span>
+                <span class="method-start">15266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidLoginValidation</span>
+                <span class="method-start">36427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testProductCheckout(9894192967, Dinesh@123)</span>
+                <span class="method-start">66804 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">97244 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tech_master.excer.test.AmazonProductCheckoutExcer2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Android, 80cde1cc, Android, 127.0.0.1, 4728)</span>
+                <span class="method-start">99038 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testProductCheckout(9894192967, Dinesh@123, Samsung galaxy a9 pro)</span>
+                <span class="method-start">107904 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">240969 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

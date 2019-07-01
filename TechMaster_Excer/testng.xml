@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tech Master Excersie">
+    <parameter name="browser name" value="Android"/>
+    <parameter name="device name" value="DeviceID"/>
+    <parameter name="platform" value="Android"/>
+    <parameter name="host" value="127.0.0.1"/>
+    <parameter name="port" value="4728"/>
+	<parameter name="username" value="9894192967"/>
+	<parameter name="password" value="Password"/>
+	
+	<test name="Login With Valid And Invalid Credentials Test">
+		 <classes>
+		     <class name="com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1" />
+ 		</classes>
+ 	</test>
+ 	<test name="Product Checkout Test">
+ 	    <parameter name="productDetailForSearch" value="Samsung galaxy a9 pro"/>
+		 <classes>
+		     <class name="com.tech_master.excer.test.AmazonProductCheckoutExcer2" />
+ 		</classes>
+ 	</test>
+</suite>

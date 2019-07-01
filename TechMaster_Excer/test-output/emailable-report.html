@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Tech Master Excersie</th></tr><tr><td><a href="#t0">Login With Valid And Invalid Credentials Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">98,991</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Product Checkout Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">144,751</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">3</th><th class="num">243,742</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Tech Master Excersie</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login With Valid And Invalid Credentials Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1</td><td><a href="#m0">testInvalidLoginValidation</a></td><td rowspan="1">1552278792988</td><td rowspan="1">30360</td></tr><tr class="failedeven"><td><a href="#m1">testProductCheckout</a></td><td rowspan="1">1552278823365</td><td rowspan="1">30427</td></tr><tr><th colspan="4">Login With Valid And Invalid Credentials Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1</td><td><a href="#m2">testBlankLoginValidation</a></td><td rowspan="1">1552278771827</td><td rowspan="1">21158</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Product Checkout Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tech_master.excer.test.AmazonProductCheckoutExcer2</td><td><a href="#m3">testProductCheckout</a></td><td rowspan="1">1552278864465</td><td rowspan="1">133051</td></tr></tbody></table><h2>Login With Valid And Invalid Credentials Test</h2><h3 id="m0">com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1#testInvalidLoginValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.33 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;dell-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=in.amazon.mShop.android.shopping, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=80cde1cc, platform=LINUX, deviceUDID=80cde1cc, appActivity=com.amazon.mShop.home.HomeActivity, desired={appPackage=in.amazon.mShop.android.shopping, appActivity=com.amazon.mShop.home.HomeActivity, BROWSER_NAME=Android, platformName=Android, deviceName=80cde1cc}, BROWSER_NAME=Android, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=SM-A910F, platformName=Android, deviceManufacturer=samsung}]
+Session ID: c9f8ef2a-c38d-4c06-bb6f-d7da449d9008
+*** Element info: {Using=id, value=in.amazon.mShop.android.shopping:id/sign_in_button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:43)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:59)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.tech_master.excer.page.LoginPage.alreadyHaveAccount(LoginPage.java:48)
+	at com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1.testInvalidLoginValidation(AmazonLoginValidInvalidTestExcer1.java:85)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1#testProductCheckout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>9894192967</td><td>Dinesh@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;dell-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=in.amazon.mShop.android.shopping, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=80cde1cc, platform=LINUX, deviceUDID=80cde1cc, appActivity=com.amazon.mShop.home.HomeActivity, desired={appPackage=in.amazon.mShop.android.shopping, appActivity=com.amazon.mShop.home.HomeActivity, BROWSER_NAME=Android, platformName=Android, deviceName=80cde1cc}, BROWSER_NAME=Android, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=SM-A910F, platformName=Android, deviceManufacturer=samsung}]
+Session ID: c9f8ef2a-c38d-4c06-bb6f-d7da449d9008
+*** Element info: {Using=id, value=in.amazon.mShop.android.shopping:id/sign_in_button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:43)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:59)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.tech_master.excer.page.LoginPage.alreadyHaveAccount(LoginPage.java:48)
+	at com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1.testProductCheckout(AmazonLoginValidInvalidTestExcer1.java:50)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.tech_master.excer.test.AmazonLoginValidInvalidTestExcer1#testBlankLoginValidation</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Product Checkout Test</h2><h3 id="m3">com.tech_master.excer.test.AmazonProductCheckoutExcer2#testProductCheckout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>9894192967</td><td>Dinesh@123</td><td>Samsung galaxy a9 pro</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;dell-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=in.amazon.mShop.android.shopping, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=80cde1cc, platform=LINUX, deviceUDID=80cde1cc, appActivity=com.amazon.mShop.home.HomeActivity, desired={appPackage=in.amazon.mShop.android.shopping, appActivity=com.amazon.mShop.home.HomeActivity, BROWSER_NAME=Android, platformName=Android, deviceName=80cde1cc}, BROWSER_NAME=Android, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=SM-A910F, platformName=Android, deviceManufacturer=samsung}]
+Session ID: 12437363-8619-4ee5-a67e-38e94257586f
+*** Element info: {Using=xpath, value=//*[starts-with(@text,&apos;Cart&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:43)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:129)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.tech_master.excer.page.ProductDetailsPage.goToCart(ProductDetailsPage.java:34)
+	at com.tech_master.excer.test.AmazonProductCheckoutExcer2.testProductCheckout(AmazonProductCheckoutExcer2.java:91)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
